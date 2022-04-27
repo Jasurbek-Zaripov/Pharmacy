@@ -1,1 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+.no {
+    display: none !important;
+}
+
+.onhover:hover {
+    background: rgba(209, 208, 208, 0.082);
+}
+
+.bx-shadow-bottom {
+    box-shadow: 0px 6px 10px 0px rgb(0 0 0 / 11%);
+}
+
+.bx-shadow {
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 11%);
+}
+
+.bx-shadow-top {
+    box-shadow: 0px -6px 10px 0px rgb(0 0 0 / 11%);
+}
+
+.w-3 {
+    width: 300px !important;
+}
+
+.mt-6 {
+    margin-top: 20%;
+}
+
+.p-a {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+
+.p-a-0 {
+    width: 90%;
+    position: absolute;
+    top: 100px;
+    left: 5%;
+}
+
+.flex-row-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-show {
+    background-color: rgba(0, 0, 0, 0.062);
+}
+
+.mt-10px {
+    margin-top: 10px !important;
+}
+
+* {
+    border-radius: 5px;
+    cursor: url('./assets/cursor.png') 50 -2, default !important;
+    user-select: none;
+}
+
+button,
+*[role='button'] {
+    cursor: url('./assets/cursor-pointer.png') 58 -2, pointer !important;
+}

@@ -1,0 +1,39 @@
+<div class="flex-row-center m-2 p-2 bx-shadow">
+    <i class="fa-solid fa-arrow-down-1-9 fa-2xl me-2"></i>
+    <select class="form-select" aria-label="Default select example">
+        <option selected>... bo'yicha tartiblash</option>
+        <option value="1">Nomi</option>
+        <option value="2">Mazili</option>
+        <option value="3">Ochilish vaqti</option>
+        <option value="3">Eng yangi</option>
+    </select>
+</div>
+<ul class="list-group">
+    <li class="list-group-item onhover" style="height: 100px;" *ngFor="let pill of pills | paginate:{itemsPerPage: 7,
+        currentPage:
+        page}">
+        <div class="row bx-shadow h-100">
+            <div class="col-1 flex-row-center">
+                <img *ngIf="pill.img" style="border-radius: 5px;" width="50px" [src]="pill.img" alt="">
+                <i *ngIf="!pill.img" class="fa-solid fa-image fa-2xl"></i>
+            </div>
+            <div class="col-10">
+                <div class="row mt-2">
+                    <div class="col text-nowrap text-center flex-row-center bg-show"><i class="fa-solid fa-pills me-2"></i>{{pill.name}}</div>
+                    &nbsp;<div class="col text-nowrap text-center flex-row-center bg-show"><i class="fa-solid fa-square-phone
+                            me-2"></i>{{pill.phone}}</div>
+                    &nbsp;<div class="col text-nowrap text-center flex-row-center bg-show"><i class="fa-solid
+                            fa-dollar-sign
+                            me-2"></i>{{pill.price}}</div>
+                    &nbsp;<div class="col text-nowrap text-center flex-row-center bg-show"><i class="fa-solid fa-location-dot
+                            me-2"></i>{{pill.region}}</div>
+                    &nbsp;<div class="col text-nowrap text-center flex-row-center bg-show"><i class="fa-solid fa-house-medical
+                            me-2"></i>{{pill.pharmacy}}</div>
+                </div>
+                <p class="text-center text-nowrap w-100 m-0 bg-show mt-10px"><i class="fa-solid fa-user-tie me-2"></i>{{pill.firma}}</p>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </li>
+</ul>
+<pagination-controls class="text-center" (pageChange)="page= $event"></pagination-controls>
