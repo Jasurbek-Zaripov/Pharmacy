@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'Pharmacy';
   selectedRegion = 'Hudud';
   pageName = 'home';
+  searchText = '';
   hudud = [{ name: 'Farqi', regions: ["yo'q"] }, { name: 'Toshkent viloyati', regions: ['Olmazor', 'Chilonzor'] }, { name: 'Jizzax viloyati', regions: ['Jizzax shahar', 'Forish tumani', 'Baxmal tumani', 'Zomin tumani'] }];
   getDate(ms?: number) {
     if (ms) {

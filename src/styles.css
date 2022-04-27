@@ -1,9 +1,10 @@
 .no {
     display: none !important;
 }
-
 .onhover:hover {
-    background: rgba(209, 208, 208, 0.082);
+    background: rgba(0, 0, 0, 0.082);
+    margin-right: 20px;
+    margin-left: 10px;
 }
 
 .bx-shadow-bottom {
@@ -57,6 +58,7 @@
     border-radius: 5px;
     cursor: url('./assets/cursor.png') 50 -2, default !important;
     user-select: none;
+    transition-duration: 0.6s;
 }
 
 button,
