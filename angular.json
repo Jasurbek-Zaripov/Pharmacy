@@ -71,7 +71,8 @@
               "browserTarget": "Pharmacy:build:production"
             },
             "development": {
-              "browserTarget": "Pharmacy:build:development"
+              "browserTarget": "Pharmacy:build:development",
+              "port":60106
             }
           },
           "defaultConfiguration": "development"

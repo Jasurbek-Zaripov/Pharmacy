@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PillsComponent implements OnInit {
   page = 1;
+  sortBy = ''
   pills = [{
     name: 'Цитрамон-П, таб. №6',
     firma: "O'zkimyofarm, AO им. С.К. Исламбекова (Узбекистан)",

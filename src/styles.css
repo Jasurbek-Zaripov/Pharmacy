@@ -59,6 +59,7 @@
     cursor: url('./assets/cursor.png') 50 -2, default !important;
     user-select: none;
     transition-duration: 0.6s;
+    box-sizing: border-box;
 }
 
 button,

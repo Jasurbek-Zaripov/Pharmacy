@@ -6,12 +6,18 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { AppComponent } from './app.component';
 import { ListMedicalComponent } from './list-medical/list-medical.component';
 import { PillsComponent } from './pills/pills.component';
+import { AuthComponent } from './auth/auth.component';
+import { AdminComponent } from './admin/admin.component';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListMedicalComponent,
-    PillsComponent
+    PillsComponent,
+    AuthComponent,
+    AdminComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
@@ -19,6 +25,6 @@ import { PillsComponent } from './pills/pills.component';
     FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [MainComponent]
 })
 export class AppModule { }
