@@ -1,0 +1,85 @@
+<div class="btn-group me-3">
+  <button
+    class="btn btn-light auth-btn-l"
+    style="border: 3px solid #6c757d; color: #6c757d"
+    (click)="signIn()"
+  >
+    <i class="text-secondary fa-solid fa-arrow-right-to-bracket me-2"></i>Sign
+    in
+  </button>
+  <button class="btn btn-secondary auth-btn-r" (click)="signUp()">
+    <i class="fa-solid fa-arrow-up-from-bracket me-2"></i>Sign up
+  </button>
+</div>
+
+<!-- board -->
+<div
+  class="position-fixed p-3 bx-shadow no"
+  style="top: 15%; right: 5%"
+  id="auth"
+>
+  <div class="row">
+    <div class="col-10"></div>
+    <img
+      class="d-block col-2 text-end"
+      width="25px"
+      src="./assets/x.gif"
+      alt="x"
+      (click)="x()"
+    />
+  </div>
+  <br />
+  <div class="input-group flex-nowrap">
+    <span class="input-group-text d-inline-block w-50" id="addon-wrapping"
+      >Username</span
+    >
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Username"
+      aria-label="Username"
+      aria-describedby="addon-wrapping"
+      [(ngModel)]="username"
+    />
+  </div>
+  <br />
+  <div class="input-group flex-nowrap">
+    <span class="input-group-text d-inline-block w-50" id="addon-wrapping"
+      >Password</span
+    >
+    <input
+      type="password"
+      class="form-control"
+      placeholder="Password"
+      aria-label="Password"
+      aria-describedby="addon-wrapping"
+      [(ngModel)]="password"
+    />
+  </div>
+  <br />
+  <div *ngIf="processName == 'Sign up'" class="input-group flex-nowrap">
+    <span class="input-group-text d-inline-block w-50" id="addon-wrapping"
+      >Confirm</span
+    >
+    <input
+      type="password"
+      class="form-control"
+      placeholder="Confirm"
+      aria-label="Confirm"
+      aria-describedby="addon-wrapping"
+      [(ngModel)]="confirm"
+    />
+  </div>
+  <br />
+  <div class="btn-group w-100">
+    <button
+      class="btn btn-warning w-50"
+      (click)="username = password = confirm = ''"
+    >
+      Clear
+    </button>
+    <button class="btn btn-secondary w-50" (click)="send()">
+      {{ processName }}
+    </button>
+  </div>
+</div>

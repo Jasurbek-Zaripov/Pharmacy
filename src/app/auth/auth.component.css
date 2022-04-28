@@ -1,0 +1,13 @@
+.auth-btn-l:hover {
+    box-shadow: -11px 6px 12px 3px rgb(0 0 0 / 51%);
+}
+.auth-btn-r:hover {
+    box-shadow: 11px 6px 12px 3px rgb(0 0 0 / 51%);
+}
+
+.auth-btn-l:active {
+    box-shadow: -5.5px 3px 6px 1.5px rgb(0 0 0 / 51%);
+}
+.auth-btn-r:active {
+    box-shadow: 5.5px 3px 6px 1.5px rgb(0 0 0 / 51%);
+}
