@@ -22,7 +22,7 @@ import { MainComponent } from './main/main.component';
   imports: [
     BrowserModule,
     NgxPaginationModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [MainComponent]
